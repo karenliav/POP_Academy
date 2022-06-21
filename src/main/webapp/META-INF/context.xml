@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<context path="/Academy_JSP_Project" docBase="www">
+<Resource
+	name="jdbc/mariadb"
+	auth="Container"
+	type="javax.sql.DataSource"
+	
+	driverClassName="org.mariadb.jdbc.Driver" url="jdbc:mysql://localhost:3306/POP"
+	loginTimeout="10" validationQuery="select 1 from dual" testOnBorrow="true"
+	username="root" password="sl22p28428" maxActive="100" maxIdle="30" maxWait="5000"
+	removeAbandoned="true" removeAbandonedTimeout="60"/>
+<ResourceLink type="javax.sql.data.Datasource"
+	name="jdbc/mariadb"
+	global="jdbc/mariadb"/>
+</context>
